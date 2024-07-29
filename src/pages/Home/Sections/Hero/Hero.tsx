@@ -14,7 +14,7 @@ const Hero =() => {
     const StyledImg = styled("img") (()=>({
             width: "100%",
             borderRadius:"50%",
-            alignContent:"center"
+            
             
 
             }))
@@ -22,7 +22,7 @@ const Hero =() => {
     return (
       <>
         <StyledHero>
-            <Container>
+            <Container maxWidth="lg">
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={4}>
                         <StyledImg src={Avatar} alt="foto selfie" />
@@ -34,15 +34,20 @@ const Hero =() => {
                         <Typography color='primary' variant="h3" textAlign="center">
                         Sou um Engenheiro Front-End
                         </Typography>
-                        <button>
-                            
-                            <DownloadIcon />
-                            Download CV
-                            </button>
-                        <button>
-                            <EmailIcon />
-                            Contato
-                            </button>
+                        <Grid container marginTop="24px" display="flex" justifyContent="center">
+                            <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                                <button>
+                                    <DownloadIcon />
+                                    Download CV
+                                </button>
+                            </Grid>
+                            <Grid item xs={12} md={4}  display="flex" justifyContent="center">
+                                <button>
+                                    <EmailIcon />
+                                    Contato
+                                </button>
+                            </Grid>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Container>
