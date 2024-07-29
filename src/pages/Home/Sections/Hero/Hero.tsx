@@ -28,10 +28,10 @@ const Hero =() => {
                         <StyledImg src={Avatar} alt="foto selfie" />
                     </Grid>
                     <Grid item xs={12} md={8}>
-                        <Typography color='primary' variant="h2" textAlign="center">
+                        <Typography color='primary' variant="h1" textAlign="center">
                         Állan Oliveira da Silva
                         </Typography>
-                        <Typography color='primary' variant="h3" textAlign="center">
+                        <Typography color='primary' variant="h2" textAlign="center">
                         Sou um Engenheiro Front-End
                         </Typography>
                         <Grid container marginTop="24px" display="flex" justifyContent="center">
